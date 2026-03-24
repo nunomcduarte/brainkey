@@ -1,0 +1,47 @@
+# === Personal content (never pushed) ===
+# Sources, concepts, arguments, models, synthesis, briefs
+00-inbox/**
+!00-inbox/.gitkeep
+01-sources/**
+!01-sources/.gitkeep
+02-concepts/**
+!02-concepts/.gitkeep
+03-arguments/**
+!03-arguments/.gitkeep
+04-models/**
+!04-models/.gitkeep
+05-synthesis/**
+!05-synthesis/.gitkeep
+06-briefs/**
+!06-briefs/.gitkeep
+
+# Maps of Content — these grow with your personal notes
+07-maps/**
+!07-maps/.gitkeep
+
+# Library docs — personal compiled knowledge
+08-library/**
+!08-library/.gitkeep
+
+# Reviews — personal learning logs
+09-reviews/**
+!09-reviews/.gitkeep
+!09-reviews/daily/.gitkeep
+!09-reviews/weekly/.gitkeep
+!09-reviews/monthly/.gitkeep
+
+# Meta indexes — built from your personal content
+_meta/processing-log.md
+_meta/sources-index.md
+_meta/tags-registry.md
+
+# Personal memory
+memory.md
+
+# === OS and editor junk ===
+.DS_Store
+**/.DS_Store
+
+# Obsidian workspace (personal, changes constantly)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json

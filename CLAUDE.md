@@ -29,7 +29,8 @@ theKnowledge/
 
 ## Core Domains
 
-The owner's areas of interest. Use these as `domains` values in frontmatter:
+The owner's areas of interest. Use these as `domains` values in frontmatter.
+New domains may be suggested during ingestion when content doesn't fit existing ones.
 - `libertarianism`
 - `austrian-economics`
 - `bitcoin`

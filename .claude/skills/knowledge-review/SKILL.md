@@ -26,7 +26,7 @@ Generate structured learning review documents from theKnowledge vault activity.
 
 ## Before Starting
 
-1. Read `memory.md` — especially Learning Journal, Evolving Positions, Knowledge Gaps, and Session Log.
+1. Read `memory.md` (lightweight index with recent sessions), then read `memory-learnings.md`, `memory-positions.md`, and `memory-gaps.md`.
 2. Read `_meta/processing-log.md` to understand all vault activity.
 3. Read `_meta/tags-registry.md` for tag context.
 
@@ -63,13 +63,13 @@ For the computed date range, collect ALL of the following:
 Read `_meta/processing-log.md`. Filter rows where the Date column falls within the date range. This gives you the list of all ingestions, syntheses, briefs, and other actions in the period.
 
 ### Step 2: Learning Journal
-Read `memory.md` → Learning Journal section. Extract entries whose date falls within the range. These are the "aha moments" — the most important insights.
+Read `memory-learnings.md`. Extract entries whose date falls within the range. These are the "aha moments" — the most important insights.
 
 ### Step 3: Evolving Positions
-Read `memory.md` → Evolving Positions section. Note any positions that reference sources from this period (check the source UIDs against processing log items).
+Read `memory-positions.md`. Note any positions that reference sources from this period (check the source UIDs against processing log items).
 
 ### Step 4: Knowledge Gaps
-Read `memory.md` → Knowledge Gaps section. Identify gaps that were added during this period (mentioned in session log entries for the period) and any that were resolved.
+Read `memory-gaps.md`. Identify gaps that were added during this period (mentioned in session log entries for the period) and any that were resolved.
 
 ### Step 5: Source Notes
 For each source in the processing log for this period:
@@ -140,7 +140,7 @@ Pull directly from the Learning Journal entries for this period. For each insigh
 - Link to the source(s)
 
 #### 5. Evolving Positions
-If any positions in `memory.md` were updated during this period:
+If any positions in `memory-positions.md` were updated during this period:
 - State the position topic
 - Show the before state (or "new position" if first time)
 - Show the current state
@@ -158,7 +158,7 @@ If the period had heavy ingestion, focus on the 5-10 most interesting connection
 
 #### 7. Knowledge Gaps
 Two subsections:
-- **New gaps identified**: Gaps added to memory.md during this period
+- **New gaps identified**: Gaps added to `memory-gaps.md` during this period
 - **Gaps closed**: Any previously identified gaps that were addressed by new sources (check if a gap's topic now has coverage)
 
 #### 8. Sources Processed
@@ -214,7 +214,7 @@ Curate the 10 most important insights from the month's Learning Journal entries.
 
 ## After Generating
 
-1. **Update `memory.md`**:
+1. **Update memory files**:
    - **Session Log**: "Generated {period} review for {date_range}. Covered X sources, Y concepts across Z domains. Saved to 09-reviews/{period}/{filename}."
 
 2. **Update `_meta/processing-log.md`**:

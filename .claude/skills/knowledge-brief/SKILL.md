@@ -24,7 +24,7 @@ Generate output documents (briefs) grounded in the user's personal knowledge vau
 
 ## Before Starting
 
-1. Read `memory.md` — especially Evolving Positions and Patterns & Preferences.
+1. Read `memory.md` (lightweight index), then read `memory-positions.md` and `memory-patterns.md`.
 2. Read `_meta/tags-registry.md` for the tag landscape.
 
 ## Brief Types
@@ -75,7 +75,7 @@ Generate output documents (briefs) grounded in the user's personal knowledge vau
 - A brief without source grounding is just generic AI output. Every claim MUST link to a vault source.
 - If the vault lacks material for a good brief, say so and suggest content to ingest first.
 - The brief should reflect the user's actual positions and sources, not generic marketing wisdom.
-- Tone should be calibrated to the user's voice as understood from their notes and memory.md.
+- Tone should be calibrated to the user's voice as understood from their notes, `memory-positions.md`, and `memory-patterns.md`.
 
 ## Report to User
 

@@ -35,8 +35,13 @@ _meta/processing-log.md
 _meta/sources-index.md
 _meta/tags-registry.md
 
-# Personal memory
+# Personal memory (split into progressive disclosure files)
 memory.md
+memory-learnings.md
+memory-positions.md
+memory-gaps.md
+memory-patterns.md
+_meta/session-archive.md
 
 # === OS and editor junk ===
 .DS_Store

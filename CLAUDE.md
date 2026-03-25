@@ -8,7 +8,11 @@ This is a personal knowledge management vault. Claude Code is the AI engine that
 theKnowledge/
 ├── CLAUDE.md          ← You are here
 ├── README.md          ← Usage guide
-├── memory.md          ← Persistent learning memory — READ THIS FIRST every session
+├── memory.md          ← Lightweight memory index — READ THIS FIRST every session
+├── memory-learnings.md ← Learning Journal (condensed insights)
+├── memory-positions.md ← Evolving Positions on key topics
+├── memory-gaps.md      ← Knowledge Gaps and blind spots
+├── memory-patterns.md  ← Owner's patterns and preferences
 ├── 00-inbox/          ← Raw captures before processing
 ├── 01-sources/        ← Processed source notes (articles, tweets, podcasts, books, videos, discussions)
 ├── 02-concepts/       ← Atomic concept notes (one idea per file)
@@ -35,9 +39,18 @@ The owner's areas of interest. Use these as `domains` values in frontmatter:
 ## Session Protocol
 
 **Every time you start working in this vault:**
-1. Read `memory.md` to understand past context, evolving positions, and recent activity
-2. Read `_meta/tags-registry.md` to know existing tags
-3. After meaningful work, update `memory.md` (Learning Journal, Session Log, etc.)
+1. Read `memory.md` (lightweight index with recent sessions and pointers to sub-files)
+2. Read the relevant memory sub-file for your task:
+   - `memory-positions.md` — when answering questions or calibrating tone
+   - `memory-gaps.md` — when planning ingestion or checking coverage
+   - `memory-learnings.md` — when reviewing insights or writing reviews
+   - `memory-patterns.md` — when tailoring output style
+3. Read `_meta/tags-registry.md` to know existing tags
+4. After meaningful work, update the appropriate memory file:
+   - Session Log → `memory.md` (keep last 10, archive older to `_meta/session-archive.md`)
+   - New insights → `memory-learnings.md`
+   - Stance changes → `memory-positions.md`
+   - New gaps → `memory-gaps.md`
 
 ## Frontmatter Schema
 
@@ -119,12 +132,12 @@ After every ingestion or significant edit:
 
 ## Memory Updates
 
-After meaningful work, update `memory.md`:
-- **Learning Journal**: When a new insight or "aha moment" emerges
-- **Evolving Positions**: When new evidence shifts a stance
-- **Knowledge Gaps**: When you notice a missing counterargument or unexplored area
-- **Patterns & Preferences**: When you notice something about the owner's thinking
-- **Session Log**: Always — briefly log what happened this session (keep last 20 entries)
+After meaningful work, update the appropriate memory file:
+- **`memory-learnings.md`**: When a new insight or "aha moment" emerges (one line per insight)
+- **`memory-positions.md`**: When new evidence shifts a stance
+- **`memory-gaps.md`**: When you notice a missing counterargument or unexplored area
+- **`memory-patterns.md`**: When you notice something about the owner's thinking
+- **`memory.md` Session Log**: Always — briefly log what happened (keep last 10 entries, archive older to `_meta/session-archive.md`)
 
 ## Content Processing Quality
 

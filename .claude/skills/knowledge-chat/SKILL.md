@@ -23,7 +23,7 @@ Answer questions grounded in the user's personal knowledge vault. Every claim sh
 
 ## Before Starting
 
-1. Read `memory.md` — especially Evolving Positions (to calibrate the answer to the user's current thinking) and Knowledge Gaps (to flag when the vault lacks information).
+1. Read `memory.md` (lightweight index), then read `memory-positions.md` (to calibrate tone) and `memory-gaps.md` (to flag when the vault lacks information).
 2. Read `_meta/tags-registry.md` for the tag landscape.
 
 ## Answering Process
@@ -44,7 +44,7 @@ Answer questions grounded in the user's personal knowledge vault. Every claim sh
 
 4. **Compose the answer**:
    - Ground every claim in a specific note: "According to [[src-...]], ..."
-   - Use the user's Evolving Positions from `memory.md` to calibrate tone
+   - Use the user's Evolving Positions from `memory-positions.md` to calibrate tone
    - Clearly distinguish between:
      - "Your sources say..." (grounded in vault)
      - "Your current position is..." (from Evolving Positions)
@@ -77,4 +77,4 @@ Answer the question directly first, then provide sources:
 - NEVER make up sources or pretend a note exists when it doesn't.
 - If the vault has nothing on the topic, say so honestly and offer to help the user find and ingest relevant content.
 - When the vault has contradicting sources, present both sides, don't pick one.
-- Update `memory.md` Session Log after answering.
+- Update `memory.md` Session Log after answering. If new insights emerged, add to `memory-learnings.md`.

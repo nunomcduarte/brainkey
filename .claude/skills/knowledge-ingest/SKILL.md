@@ -27,7 +27,7 @@ Add content to the theKnowledge vault. This is the core pipeline — all content
 
 ## Before Starting
 
-1. Read `memory.md` at the vault root for context on past learnings and current positions.
+1. Read `memory.md` (lightweight index) at the vault root for recent session context. Read `memory-positions.md` for current positions.
 2. Read `_meta/tags-registry.md` to know existing tags (prefer reuse over creating new ones).
 
 ## Input Types
@@ -123,10 +123,11 @@ For each extracted concept:
 
 ### Step 8: Update Memory
 
-Read `memory.md` and update:
-- **Session Log**: Append what was ingested.
-- **Learning Journal**: If a genuinely new insight emerged (not just "added another article"), add it.
-- **Knowledge Gaps**: If this source reveals a gap (e.g., a claim with no counterargument in the vault), note it.
+Update the appropriate memory files:
+- **`memory.md` Session Log**: Append what was ingested (keep last 10 entries, archive older to `_meta/session-archive.md`).
+- **`memory-learnings.md`**: If a genuinely new insight emerged (not just "added another article"), add a one-line entry.
+- **`memory-gaps.md`**: If this source reveals a gap (e.g., a claim with no counterargument in the vault), note it.
+- **`memory.md` Vault Stats**: Update counts if they've changed significantly.
 
 ### Step 9: Report to User
 

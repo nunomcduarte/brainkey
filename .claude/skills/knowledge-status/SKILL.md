@@ -57,7 +57,7 @@ Search for notes with empty `related_sources` and `related_concepts` — these a
 
 ### 6. Knowledge Gaps
 
-Read `memory.md` → Knowledge Gaps section and display current gaps.
+Read `memory-gaps.md` and display current gaps.
 
 ### 7. Suggestions
 
@@ -97,4 +97,4 @@ Suggestions:
   - ...
 ```
 
-Update `memory.md` Session Log after displaying status.
+Update `memory.md` Session Log after displaying status. Update vault stats in `memory.md` if they've changed.

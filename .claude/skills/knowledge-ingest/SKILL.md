@@ -67,7 +67,16 @@ Generate:
 - **Core Arguments**: The main claims or positions argued in the content.
 - **Concepts**: Atomic ideas that can stand as their own notes. Think: "Would someone search for this term?"
 - **Tags**: Read `_meta/tags-registry.md` first. Reuse existing tags. Only mint new ones for genuinely new concepts. Tags are lowercase-hyphenated.
-- **Domains**: Assign from: `libertarianism`, `austrian-economics`, `bitcoin`, `ai-vibecoding`, `ai-vibemarketing`. A source can belong to multiple domains.
+- **Domains**: Check the `## Core Domains` list in `CLAUDE.md` for the current domains. A source can belong to multiple domains. **Domain Fit Check** — if the content doesn't fit well into ANY existing domain (the match feels forced or the content's primary subject is clearly outside all current domains), pause and:
+  1. Propose a new domain name (lowercase-hyphenated, following existing conventions like `austrian-economics`, `ai-vibecoding`)
+  2. Briefly explain why existing domains don't cover it
+  3. Ask the user to: **approve**, **rename** (suggest a different name), or **skip** (force-fit to the closest existing domain)
+  4. If approved or renamed:
+     - Create `08-library/<new-domain>/` folder
+     - Create `07-maps/MOC-<New-Domain>.md` using the standard MOC structure (title, description, sections for Sources, Key Concepts, Arguments, Models & Frameworks, Synthesis Notes)
+     - Add the new domain to the `## Core Domains` list in `CLAUDE.md`
+     - Add the domain folder mapping to Step 7's Library section below
+     - Continue ingestion with the new domain assigned
 - **Confidence**: `high` (peer-reviewed, established author), `medium` (thoughtful but opinion-based), `low` (speculative), `contested` (actively debated).
 
 ### Step 4: Write Source Note

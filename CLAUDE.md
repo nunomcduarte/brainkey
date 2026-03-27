@@ -1,11 +1,11 @@
-# theKnowledge — Project Instructions
+# Second Brain — Project Instructions
 
-This is a personal knowledge management vault. Claude Code is the AI engine that powers ingestion, connection discovery, synthesis, and querying. Everything lives in markdown files — no external databases or APIs.
+A personal knowledge management vault powered by Claude Code. Ingestion, connection discovery, synthesis, and querying — all in markdown files, no external databases or APIs.
 
 ## Vault Structure
 
 ```
-theKnowledge/
+theKnowledge/                  ← directory name (aka Second Brain)
 ├── CLAUDE.md          ← You are here
 ├── README.md          ← Usage guide
 ├── memory.md          ← Lightweight memory index — READ THIS FIRST every session
@@ -29,13 +29,19 @@ theKnowledge/
 
 ## Core Domains
 
-The owner's areas of interest. Use these as `domains` values in frontmatter.
-New domains may be suggested during ingestion when content doesn't fit existing ones.
-- `libertarianism`
-- `austrian-economics`
-- `bitcoin`
-- `ai-vibecoding`
-- `ai-vibemarketing`
+Domains are managed in `_meta/domains-registry.md` — the single source of truth.
+Read it to get active domains and their associated MOCs and library folders.
+New domains emerge organically during ingestion or via the first-run wizard.
+
+## First Run
+
+If `_meta/domains-registry.md` is empty or has no data rows, the vault is fresh:
+1. Ask the user: "What are your main areas of interest?" (provide examples like technology, philosophy, business, etc.)
+2. For each domain the user provides, create:
+   - A row in `_meta/domains-registry.md`
+   - A MOC file at `07-maps/MOC-<Display-Name>.md`
+   - A library folder at `08-library/<domain-slug>/`
+3. If the user declines or says "skip": proceed with no domains. They will emerge organically as content is ingested.
 
 ## Session Protocol
 

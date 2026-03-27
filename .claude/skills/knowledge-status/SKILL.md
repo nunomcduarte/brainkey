@@ -14,7 +14,7 @@ allowed-tools:
 
 # Knowledge Status
 
-Display a dashboard of the theKnowledge vault's health and activity.
+Display a dashboard of your Second Brain vault's health and activity.
 
 ## Vault Location
 
@@ -36,7 +36,7 @@ Use Glob to count: `01-sources/**/*.md`, etc.
 
 ### 2. Domain Coverage
 
-For each domain, read the MOC and count:
+Read `_meta/domains-registry.md` for the list of active domains. For each domain, read its MOC and count:
 - Sources, concepts, arguments, models, syntheses
 - Show which domains are well-covered vs. thin
 
@@ -70,7 +70,7 @@ Based on the analysis, suggest:
 ## Output Format
 
 ```
-theKnowledge Vault Status
+Second Brain Vault Status
 ========================
 
 Sources: X (articles: X, tweets: X, podcasts: X, books: X, videos: X, discussions: X)
@@ -78,11 +78,8 @@ Concepts: X | Arguments: X | Models: X
 Synthesis: X | Briefs: X
 
 Domain Coverage:
-  Libertarianism:     X sources, X concepts
-  Austrian Economics: X sources, X concepts
-  Bitcoin:            X sources, X concepts
-  AI/VibeCoding:      X sources, X concepts
-  AI/VibeMarketing:   X sources, X concepts
+  [For each domain in _meta/domains-registry.md]:
+  <Display Name>:     X sources, X concepts
 
 Tags: X unique (top: tag-a (N), tag-b (N), tag-c (N))
 

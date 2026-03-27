@@ -15,7 +15,7 @@ allowed-tools:
 
 # Knowledge Connect
 
-Re-scan notes in the theKnowledge vault for connections and create `[[backlinks]]` between related notes.
+Re-scan notes in the Second Brain vault for connections and create `[[backlinks]]` between related notes.
 
 ## Vault Location
 

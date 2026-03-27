@@ -18,7 +18,7 @@ allowed-tools:
 
 # Knowledge Review
 
-Generate structured learning review documents from theKnowledge vault activity.
+Generate structured learning review documents from Second Brain vault activity.
 
 ## Vault Location
 

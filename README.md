@@ -1,6 +1,17 @@
-# theKnowledge
+# Second Brain
 
 A personal knowledge management system powered by Claude Code. Turn scattered content into connected, actionable knowledge.
+
+## Setup
+
+### Optional: Firecrawl for URL ingestion
+
+For the best URL scraping experience, install firecrawl:
+```bash
+npm install -g firecrawl
+```
+
+The system works without it — URLs will be fetched via WebFetch as a fallback — but firecrawl produces cleaner markdown from web pages.
 
 ## Quick Start
 
@@ -143,7 +154,7 @@ This works well for hundreds of notes without any external database.
 ## Vault Structure
 
 ```
-theKnowledge/
+theKnowledge/                  (aka Second Brain)
 ├── 00-inbox/          Raw captures before processing
 ├── 01-sources/        Processed source notes (articles, tweets, podcasts, books, videos, discussions)
 ├── 02-concepts/       Atomic concept notes — one idea per file
@@ -159,12 +170,9 @@ theKnowledge/
 
 ## Domains
 
-Your five areas of interest:
-- **Libertarianism** — individual freedom, voluntary exchange, limited government
-- **Austrian Economics** — praxeology, business cycle theory, sound money
-- **Bitcoin** — monetary properties, adoption, Lightning Network
-- **AI/VibeCoding** — AI-assisted development, agents, LLMs
-- **AI/VibeMarketing** — AI-powered marketing, content creation, automation
+Your areas of interest are defined in `_meta/domains-registry.md`. New domains are
+auto-created when ingested content doesn't fit existing ones. On first run, you'll be
+asked for your main interests — or you can skip and let domains emerge organically.
 
 ## Tips
 

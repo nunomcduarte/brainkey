@@ -16,7 +16,7 @@ allowed-tools:
 
 # Knowledge Synthesize
 
-Generate synthesis notes that surface patterns across multiple sources in the theKnowledge vault.
+Generate synthesis notes that surface patterns across multiple sources in the Second Brain vault.
 
 ## Vault Location
 

@@ -15,7 +15,7 @@ allowed-tools:
 
 # Knowledge Chat
 
-Answer questions grounded in the user's personal knowledge vault. Every claim should reference specific sources from theKnowledge vault.
+Answer questions grounded in the user's personal knowledge vault. Every claim should reference specific sources from Second Brain vault.
 
 ## Vault Location
 

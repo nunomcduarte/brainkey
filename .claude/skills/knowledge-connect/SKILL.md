@@ -23,7 +23,7 @@ Re-scan notes in the Second Brain vault for connections and create `[[backlinks]
 
 ## Before Starting
 
-1. Read `memory.md` for context.
+1. Read `memory.md` (lightweight index) for context.
 2. Read `_meta/tags-registry.md` for the tag landscape.
 
 ## Usage Modes
@@ -70,7 +70,7 @@ For each target note:
 ## After Connecting
 
 - Update `memory.md` Session Log with what was connected.
-- If interesting patterns emerge (e.g., many notes converge on a topic), note this in `memory.md` Learning Journal and suggest the user run `/knowledge-synthesize`.
+- If interesting patterns emerge (e.g., many notes converge on a topic), note this in `memory-learnings.md` and suggest the user run `/knowledge-synthesize`.
 
 ## Report to User
 

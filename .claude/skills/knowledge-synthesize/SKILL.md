@@ -24,7 +24,7 @@ Generate synthesis notes that surface patterns across multiple sources in the Se
 
 ## Before Starting
 
-1. Read `memory.md` — especially Evolving Positions and Knowledge Gaps.
+1. Read `memory.md` (lightweight index), then read `memory-positions.md` and `memory-gaps.md`.
 2. Read `_meta/tags-registry.md` and `_meta/sources-index.md` for an overview.
 
 ## Usage Modes
@@ -72,10 +72,10 @@ User says "find patterns" with no specific scope.
 5. **Update MOCs**: Add the synthesis note to relevant `07-maps/MOC-*.md` files under `## Synthesis Notes`.
 
 6. **Update Memory**:
-   - **Learning Journal**: Add the key insight from this synthesis
-   - **Evolving Positions**: If the synthesis changes or strengthens a position, update it
-   - **Knowledge Gaps**: If the synthesis reveals gaps, add them
-   - **Session Log**: Log what was synthesized
+   - **`memory-learnings.md`**: Add the key insight from this synthesis
+   - **`memory-positions.md`**: If the synthesis changes or strengthens a position, update it
+   - **`memory-gaps.md`**: If the synthesis reveals gaps, add them
+   - **`memory.md` Session Log**: Log what was synthesized
 
 ## Quality Standards
 

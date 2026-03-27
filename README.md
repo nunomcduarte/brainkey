@@ -15,8 +15,8 @@ The system works without it — URLs will be fetched via WebFetch as a fallback 
 
 ## Quick Start
 
-1. Open this folder in Obsidian (File > Open Vault > select `theKnowledge`)
-2. Open Claude Code in this directory: `cd ~/Desktop/FeeltheVibe/theKnowledge && claude`
+1. Open this folder in Obsidian (File > Open Vault > select this project folder)
+2. Open Claude Code in this directory: `cd /path/to/your/vault && claude`
 3. Start adding content with `/knowledge-ingest`
 
 ## Skills
@@ -154,7 +154,7 @@ This works well for hundreds of notes without any external database.
 ## Vault Structure
 
 ```
-theKnowledge/                  (aka Second Brain)
+./ (project root)              (aka Second Brain)
 ├── 00-inbox/          Raw captures before processing
 ├── 01-sources/        Processed source notes (articles, tweets, podcasts, books, videos, discussions)
 ├── 02-concepts/       Atomic concept notes — one idea per file

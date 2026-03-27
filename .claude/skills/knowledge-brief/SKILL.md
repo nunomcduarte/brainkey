@@ -20,7 +20,7 @@ Generate output documents (briefs) grounded in the user's personal knowledge vau
 
 ## Vault Location
 
-`/Users/nunoduarte/Desktop/FeeltheVibe/theKnowledge/`
+The vault is the **project root** (the directory containing `CLAUDE.md`). All paths in this skill are relative to the project root. Do not hardcode absolute paths.
 
 ## Before Starting
 

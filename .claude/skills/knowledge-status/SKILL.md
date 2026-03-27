@@ -18,7 +18,7 @@ Display a dashboard of your Second Brain vault's health and activity.
 
 ## Vault Location
 
-`/Users/nunoduarte/Desktop/FeeltheVibe/theKnowledge/`
+The vault is the **project root** (the directory containing `CLAUDE.md`). All paths in this skill are relative to the project root. Do not hardcode absolute paths.
 
 ## Dashboard Sections
 

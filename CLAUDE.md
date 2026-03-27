@@ -5,7 +5,7 @@ A personal knowledge management vault powered by Claude Code. Ingestion, connect
 ## Vault Structure
 
 ```
-theKnowledge/                  ← directory name (aka Second Brain)
+./ (project root)              ← your Second Brain vault
 ├── CLAUDE.md          ← You are here
 ├── README.md          ← Usage guide
 ├── memory.md          ← Lightweight memory index — READ THIS FIRST every session

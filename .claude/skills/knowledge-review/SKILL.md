@@ -22,7 +22,7 @@ Generate structured learning review documents from Second Brain vault activity.
 
 ## Vault Location
 
-`/Users/nunoduarte/Desktop/FeeltheVibe/theKnowledge/`
+The vault is the **project root** (the directory containing `CLAUDE.md`). All paths in this skill are relative to the project root. Do not hardcode absolute paths.
 
 ## Before Starting
 

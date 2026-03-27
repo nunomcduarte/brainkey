@@ -37,6 +37,11 @@ _meta/tags-registry.md
 
 # Personal memory
 memory.md
+memory-*.md
+_meta/session-archive.md
+
+# Frontend (separate repo)
+frontend/
 
 # === OS and editor junk ===
 .DS_Store

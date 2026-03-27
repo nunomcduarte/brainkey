@@ -35,13 +35,24 @@ _meta/processing-log.md
 _meta/sources-index.md
 _meta/tags-registry.md
 
+# Domain-split indexes (personal content, loaded on demand)
+_meta/tags/*.md
+!_meta/tags/.gitkeep
+_meta/sources/*.md
+!_meta/sources/.gitkeep
+
 # Personal memory (split into progressive disclosure files)
 memory.md
 memory-learnings.md
 memory-positions.md
 memory-gaps.md
 memory-patterns.md
+
+# Memory archives (personal)
 _meta/session-archive.md
+_meta/learnings-archive.md
+_meta/positions-archive.md
+_meta/gaps-archive.md
 
 # === Personal skills (not part of the project) ===
 .claude/skills/call-git/

@@ -23,8 +23,8 @@ The vault is the **project root** (the directory containing `CLAUDE.md`). All pa
 
 ## Before Starting
 
-1. Read `memory.md` (lightweight index), then read `memory-positions.md` (to calibrate tone) and `memory-gaps.md` (to flag when the vault lacks information).
-2. Read `_meta/tags-registry.md` for the tag landscape.
+1. Read `memory.md` (lightweight index), then read `memory-positions.md` (to calibrate tone) and `memory-gaps.md` (to flag when the vault lacks information). If any file doesn't exist, skip it.
+2. Identify the question's domain(s) from `_meta/domains-registry.md`, then read `_meta/tags/<domain>.md` and `_meta/sources/<domain>.md` for targeted context. Fall back to global `_meta/tags-registry.md` only if domain is unclear.
 
 ## Answering Process
 

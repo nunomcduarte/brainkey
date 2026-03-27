@@ -32,11 +32,11 @@ The vault is the **project root** (the directory containing `CLAUDE.md`). All pa
 
 ## Before Starting
 
-1. Read `memory.md` at the vault root for recent session context.
-2. Read `memory-gaps.md` to understand what the vault is missing — this informs search suggestions.
+1. Read `memory.md` at the vault root for recent session context. If it doesn't exist, skip it.
+2. Read `memory-gaps.md` to understand what the vault is missing — this informs search suggestions. If it doesn't exist, skip it.
 3. Read `_meta/domains-registry.md` for active domains.
-4. Read `_meta/tags-registry.md` for existing tags (used during ingestion phase).
-5. Read `_meta/sources-index.md` to know what is already in the vault (used for deduplication of search results).
+4. Read `_meta/sources-index.md` (global lightweight index) for deduplication of search results. If the search targets a specific domain, also read `_meta/sources/<domain>.md` for richer context.
+5. Tags are loaded during the ingestion phase (not needed for search itself).
 
 ## Step 1: Parse the Search Request
 

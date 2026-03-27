@@ -46,7 +46,7 @@ Read `_meta/processing-log.md` and show the last 10 entries.
 
 ### 4. Tag Landscape
 
-Read `_meta/tags-registry.md` and show:
+Read `_meta/tags-registry.md` (global lightweight index) and show per-domain counts from `_meta/tags/<domain>.md` files:
 - Total unique tags
 - Top 10 most-used tags
 - Tags used only once (potential merge candidates)

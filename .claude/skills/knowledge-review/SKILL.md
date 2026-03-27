@@ -26,9 +26,9 @@ The vault is the **project root** (the directory containing `CLAUDE.md`). All pa
 
 ## Before Starting
 
-1. Read `memory.md` (lightweight index with recent sessions), then read `memory-learnings.md`, `memory-positions.md`, and `memory-gaps.md`.
-2. Read `_meta/processing-log.md` to understand all vault activity.
-3. Read `_meta/tags-registry.md` for tag context.
+1. Read `memory.md` (lightweight index with recent sessions), then read `memory-learnings.md`, `memory-positions.md`, and `memory-gaps.md`. If any file doesn't exist, skip it.
+2. Read `_meta/processing-log.md` to understand all vault activity. If it doesn't exist, skip it.
+3. Read `_meta/tags-registry.md` (global lightweight index) for tag landscape overview. For domain-specific detail, read `_meta/tags/<domain>.md` for active domains in the review period.
 
 ## Period Detection
 

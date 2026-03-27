@@ -27,12 +27,12 @@ The vault is the **project root** (the directory containing `CLAUDE.md`). All pa
 
 ## Before Starting
 
-1. Read `memory.md` (lightweight index) at the vault root for recent session context. Read `memory-positions.md` for current positions.
-2. Read `_meta/tags-registry.md` to know existing tags (prefer reuse over creating new ones).
-3. Read `_meta/domains-registry.md` for the current domains list.
+1. Read `memory.md` (lightweight index) at the vault root for recent session context. Read `memory-positions.md` for current positions. If a file doesn't exist yet, skip it.
+2. Read `_meta/domains-registry.md` for the current domains list.
+3. **Load tags on demand**: If the content's domain(s) are known, read `_meta/tags/<domain>.md` for relevant tags. Otherwise, read `_meta/tags-registry.md` (global lightweight index) for deduplication. Prefer reuse over creating new ones.
 4. **First-run check**: If `_meta/domains-registry.md` has no data rows (empty or header only):
    - Ask the user: "This looks like a fresh vault. What are your main areas of interest?" (give examples: technology, philosophy, business, health, etc.)
-   - For each domain they provide: add a row to the registry, create the MOC file, and create the library folder.
+   - For each domain they provide: add a row to the registry, create the MOC file, create the library folder, and create `_meta/tags/<domain-slug>.md` and `_meta/sources/<domain-slug>.md` (with header rows).
    - If the user says "skip" or "none yet": proceed with no domains — they'll emerge organically as content is ingested.
 
 ## Input Types
@@ -135,10 +135,12 @@ For each extracted concept:
 
 ### Step 7: Update Indexes
 
-1. **Tags Registry** (`_meta/tags-registry.md`): Add new rows for any new tags. Update counts for existing tags.
-2. **Sources Index** (`_meta/sources-index.md`): Add a new row with: UID, Title, URL, Author, Type, Domains, Tags, Date.
-3. **Processing Log** (`_meta/processing-log.md`): Append: Date, "ingested", UID, brief note.
-4. **MOCs** (`07-maps/MOC-<Domain>.md`): For each domain the source belongs to, add the source link under `## Sources`. Add any new concept links under `## Key Concepts`.
+1. **Global Tags** (`_meta/tags-registry.md`): Add new rows for any new tags (one line per tag: `| tag | domain(s) | count |`). Update counts for existing tags.
+2. **Domain Tags** (`_meta/tags/<domain>.md`): For each relevant domain, add/update tags with full detail (tag, count, description, related concepts, first seen). Create the file with header row if it doesn't exist.
+3. **Global Sources** (`_meta/sources-index.md`): Add a new row with: UID, Title, URL, Author, Type, Domains, Tags, Date.
+4. **Domain Sources** (`_meta/sources/<domain>.md`): For each relevant domain, add source row with full metadata. Create the file with header row if it doesn't exist.
+5. **Processing Log** (`_meta/processing-log.md`): Append: Date, "ingested", UID, brief note.
+6. **MOCs** (`07-maps/MOC-<Domain>.md`): For each domain the source belongs to, add the source link under `## Sources`. Add any new concept links under `## Key Concepts`.
 5. **Library** (`08-library/<domain>/`): For each domain the source belongs to, create a NEW library doc inside the domain folder. Each library doc is a standalone learning document derived from the ingested source:
    - **Filename**: `<descriptive-topic-slug>.md` (e.g., `autoresearch-and-skill-optimization.md`). Use a clear, readable name that describes the topic, NOT the source title.
    - **"What I Learned" section**: A concise narrative explaining what the source teaches, written in plain language. Not a copy of the source summary — reframe it as personal knowledge gained.
@@ -156,15 +158,16 @@ If content doesn't fit any domain in `_meta/domains-registry.md`:
 1. Propose a new domain name (lowercase-hyphenated slug + display name)
 2. Briefly explain why existing domains don't fit
 3. Ask user to: approve, rename, or skip domain assignment
-4. If approved: add a new row to `_meta/domains-registry.md`, create `07-maps/MOC-<Display-Name>.md`, and create `08-library/<domain-slug>/`
+4. If approved: add a new row to `_meta/domains-registry.md`, create `07-maps/MOC-<Display-Name>.md`, create `08-library/<domain-slug>/`, and create `_meta/tags/<domain-slug>.md` and `_meta/sources/<domain-slug>.md` (with header rows)
 
 ### Step 8: Update Memory
 
 Update the appropriate memory files:
 - **`memory.md` Session Log**: Append what was ingested (keep last 10 entries, archive older to `_meta/session-archive.md`).
-- **`memory-learnings.md`**: If a genuinely new insight emerged (not just "added another article"), add a one-line entry.
-- **`memory-gaps.md`**: If this source reveals a gap (e.g., a claim with no counterargument in the vault), note it.
+- **`memory-learnings.md`**: If a genuinely new insight emerged (not just "added another article"), add a one-line entry. If file exceeds ~80 entries, trigger consolidation (see CLAUDE.md > Memory Scaling).
+- **`memory-gaps.md`**: If this source reveals a gap (e.g., a claim with no counterargument in the vault), note it. If a gap was filled by this source, mark it as addressed.
 - **`memory.md` Vault Stats**: Update counts if they've changed significantly.
+- **If any memory file doesn't exist yet**, create it using the template from `_templates/`.
 
 ### Step 9: Report to User
 

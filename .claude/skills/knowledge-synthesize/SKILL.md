@@ -24,8 +24,8 @@ The vault is the **project root** (the directory containing `CLAUDE.md`). All pa
 
 ## Before Starting
 
-1. Read `memory.md` (lightweight index), then read `memory-positions.md` and `memory-gaps.md`.
-2. Read `_meta/tags-registry.md` and `_meta/sources-index.md` for an overview.
+1. Read `memory.md` (lightweight index), then read `memory-positions.md` and `memory-gaps.md`. If any file doesn't exist, skip it.
+2. Read `_meta/domains-registry.md` for active domains. For the synthesis topic's domain(s), read `_meta/tags/<domain>.md` and `_meta/sources/<domain>.md`. Fall back to global `_meta/tags-registry.md` and `_meta/sources-index.md` if domain is unclear.
 
 ## Usage Modes
 

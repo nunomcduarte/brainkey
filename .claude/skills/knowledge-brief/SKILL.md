@@ -24,8 +24,8 @@ The vault is the **project root** (the directory containing `CLAUDE.md`). All pa
 
 ## Before Starting
 
-1. Read `memory.md` (lightweight index), then read `memory-positions.md` and `memory-patterns.md`.
-2. Read `_meta/tags-registry.md` for the tag landscape.
+1. Read `memory.md` (lightweight index), then read `memory-positions.md` and `memory-patterns.md`. If any file doesn't exist, skip it.
+2. Read `_meta/domains-registry.md` for active domains. For the brief topic's domain(s), read `_meta/tags/<domain>.md` for tag context. Fall back to `_meta/tags-registry.md` (global) if domain is unclear.
 
 ## Brief Types
 

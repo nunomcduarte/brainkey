@@ -4,20 +4,25 @@ A personal knowledge management system powered by Claude Code. Turn scattered co
 
 ## Setup
 
-### Optional: Firecrawl for URL ingestion
-
-For the best URL scraping experience, install firecrawl:
 ```bash
-npm install -g firecrawl
+git clone https://github.com/nunomcduarte/brainkey.git
+cd brainkey
+bash install.sh
 ```
 
-The system works without it — URLs will be fetched via WebFetch as a fallback — but firecrawl produces cleaner markdown from web pages.
+The install script checks prerequisites, sets up folders, and walks you through getting started. That's it.
+
+**Requirements:**
+- [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) (required)
+- [Obsidian](https://obsidian.md) (optional — for visual browsing with backlinks and graph view)
+- [firecrawl](https://www.firecrawl.dev/) (optional — `npm install -g firecrawl` for better URL scraping)
 
 ## Quick Start
 
-1. Open this folder in Obsidian (File > Open Vault > select this project folder)
-2. Open Claude Code in this directory: `cd /path/to/your/vault && claude`
-3. Start adding content with `/knowledge-ingest`
+1. Run `bash install.sh` from the project root
+2. Start Claude Code: `claude`
+3. On first run, you'll be asked for your areas of interest (or skip to let them emerge organically)
+4. Start adding content: `/knowledge-ingest https://example.com/article`
 
 ## Skills
 

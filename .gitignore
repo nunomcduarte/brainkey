@@ -41,12 +41,12 @@ _meta/tags/*.md
 _meta/sources/*.md
 !_meta/sources/.gitkeep
 
-# Personal memory (split into progressive disclosure files)
-memory.md
-memory-learnings.md
-memory-positions.md
-memory-gaps.md
-memory-patterns.md
+# Personal memory (split into progressive disclosure files — root only)
+/memory.md
+/memory-learnings.md
+/memory-positions.md
+/memory-gaps.md
+/memory-patterns.md
 
 # Memory archives (personal)
 _meta/session-archive.md
